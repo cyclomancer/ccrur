@@ -2,12 +2,13 @@
 /+  default-agent, dbug, agentio, verb, goon
 |%
 +$  state-0  [%0 =index-0]
-+$  state-1  [%1 =index =mirror =sources]
++$  state-1  [%1 =index =mirror =sources =query]
 +$  versioned-state
   $%  state-0
       state-1
   ==
 +$  card  card:agent:gall
++$  query  (each @ud @t)
 --
 ^-  agent:gall
 %-  agent:dbug
@@ -19,7 +20,7 @@
 +*  this  .
     def   ~(. (default-agent this %|) bowl)
     io    ~(. agentio bowl)
-    helper  +>
+    helper  ~(. +> bowl)
 ++  on-init
   :_  this(sources (~(put in sources) ~tondes-sitrym))
   [%pass /mirror %agent [~tondes-sitrym %ccrur] %watch /mirror]~
