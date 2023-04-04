@@ -1,0 +1,10 @@
+:~
+  title+'CCRUR'
+  info+''
+  color+0x0
+  version+[0 0 1]
+  website+''
+  license+'MIT'
+  base+'ccrur'
+  glob-http+['https://tondes-sitrym.s3.us-west-1.amazonaws.com/glob-0v3.l6qla.b76p7.mmnbq.3daal.ko0ds.glob' 0v3.l6qla.b76p7.mmnbq.3daal.ko0ds]
+==
